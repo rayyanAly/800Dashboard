@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
       {/* Logo row */}
       <div className="flex items-center justify-between mb-3">
         <Image
-          src={isCollapsed ? "/logo2.svg" : "/logo.svg"}
+          src={isCollapsed ? "/logo800.png" : "/logo.svg"}
           alt="800 Pharmacy Logo"
           width={isCollapsed ? 40 : 150}
           height={isCollapsed ? 40 : 150}
@@ -68,7 +68,7 @@ const Sidebar: React.FC = () => {
       <div className="h-px w-full bg-slate-200/70 mb-4" />
 
       {/* Navigation */}
-<nav className="flex-1 space-y-2 text-lg">
+<nav className="flex-1 space-y-1.5 text-md">
   {menuItems.map((item) => (
     <div
       key={item.label}
@@ -102,7 +102,7 @@ const Sidebar: React.FC = () => {
 
 
       {/* Profile */}
-      <div className="mt-auto rounded-xl border border-slate-200 bg-white/70 backdrop-blur-md p-3.5 shadow-sm hover:green-300 transition-colors">
+      <div className="mt-auto rounded-xl border border-slate-200 bg-white/70 backdrop-blur-md p-2 shadow-sm hover:bg-green-200 transition-colors">
         <div className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 shadow-inner">
             <FiUser className="h-4 w-4 text-slate-500" />
